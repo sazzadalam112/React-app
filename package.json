@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sazzadalam112/Food-App.git"
+    "url": "git+https://github.com/sazzadalam112/React-app.git"
   },
   "author": "Sazzad",
   "license": "ISC",
   "bugs": {
-    "url": "https://https://github.com/sazzadalam112/Food-App/issues"
+    "url": "https://https://github.com/sazzadalam112/React-app/issues"
   },
-  "homepage": "https://github.com/sazzadalam112/Food-App#readme",
+  "homepage": "https://github.com/sazzadalam112/React-app#readme",
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "babel-plugin-transform-remove-console": "^6.9.4",
