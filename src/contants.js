@@ -1,30 +1,6 @@
-import React from "react";
-import  ReactDOM  from "react-dom/client";
+export const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 
-const Title = () => (
-    <img
-    className="logo" 
-    alt="logo"
-    src="https://img.freepik.com/free-vector/restaurant-retro-logo-pack_23-2148369916.jpg?w=740&t=st=1695195526~exp=1695196126~hmac=4999cc14aeefcdda47d43b78dc0bfc10eafdb5f555c12c6bfd16f89ad6f7dae8"
-    />
-);
-const Header = () => {
-    return(
-        <div className="header">
-            <Title />
-             <div className="nav-items">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Cart</li>
-            </ul>
-        </div>
-        </div>
-    );
-};
-
-const restaurantList = [
+ export const restaurantList = [
   
     {
         type: "restaurant",
@@ -758,49 +734,3 @@ const restaurantList = [
       },
       
 ]
-const RestrauntCard =  ({ 
-  name,
-  cuisines,
-  cloudinaryImageId,
-  lastMileTravelString,
-})=> 
-{
-  return(
-        <div className="card">
-            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +cloudinaryImageId}/>
-            <h2>{name}</h2>
-            <h2>{cuisines.join(" , ")}</h2>
-            <h4>{lastMileTravelString}minutes</h4>
-
-        </div>
-    )
-}
-
-const Body = () =>{
-    return(
-        <div className="restaurant-list">
-          {
-            restaurantList.map((restaurant) => {
-              return <RestrauntCard {... restaurant.data} />
-            })
-          }
-         </div>
-      )
-  };
-const Footer = () =>{
-     return<h4>Footer</h4>;
-};
-
-
-
-const AppLayout = () => {
-    return(
-        <>
-        <Header />
-        <Body />
-        <Footer />
-        </>
-    )
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />)
