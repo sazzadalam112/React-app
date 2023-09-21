@@ -25,6 +25,7 @@ const Header = () => {
 };
 
 const restaurantList = [
+  
     {
         type: "restaurant",
         data: {
@@ -150,6 +151,7 @@ const restaurantList = [
         },
         subtype: "basic",
       },
+      
       {
         type: "restaurant",
         data: {
@@ -756,14 +758,19 @@ const restaurantList = [
       },
       
 ]
-const RestrauntCard =  (props) => {
-  console.log(props)
-    return(
+const RestrauntCard =  ({ 
+  name,
+  cuisines,
+  cloudinaryImageId,
+  lastMileTravelString,
+})=> 
+{
+  return(
         <div className="card">
-            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +props.restaurant.data.cloudinaryImageId}/>
-            <h2>{props.restaurant.data.name}</h2>
-            <h2>{props.restaurant.data.cuisines.join(" , ")}</h2>
-            <h4>{props.restaurant.data?.lastMileTravelString}minutes</h4>
+            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +cloudinaryImageId}/>
+            <h2>{name}</h2>
+            <h2>{cuisines.join(" , ")}</h2>
+            <h4>{lastMileTravelString}minutes</h4>
 
         </div>
     )
@@ -772,20 +779,16 @@ const RestrauntCard =  (props) => {
 const Body = () =>{
     return(
         <div className="restaurant-list">
-            <RestrauntCard restaurant ={restaurantList[0]}/>
-            <RestrauntCard restaurant ={restaurantList[1]}/>
-            <RestrauntCard restaurant ={restaurantList[2]}/>
-            <RestrauntCard restaurant ={restaurantList[3]}/>
-            <RestrauntCard restaurant ={restaurantList[4]}/>
-            <RestrauntCard restaurant ={restaurantList[5]}/>
-           
-        </div>
-        
-    )
-   
-};
+          {
+            restaurantList.map((restaurant) => {
+              return <RestrauntCard {... restaurant.data} />
+            })
+          }
+         </div>
+      )
+  };
 const Footer = () =>{
-    return<h4>Footer</h4>;
+     return<h4>Footer</h4>;
 };
 
 
