@@ -3,9 +3,9 @@
     justify-content: space-between ;
     margin: 10px;
     border: 1 px solid black;
-    background-color: rgb(137, 130, 117);
+    background-color: rgb(61, 183, 17);
     color: white;
-    
+    box-sizing: border-box;
 }
 .header button{
     background-color: grey;
@@ -17,11 +17,12 @@
    display: flex;
    }
 .nav-items > ul > li {
-    padding: 50px;
-    font-size: 50px;
+    padding: 30px;
+    font-size: 20px;
 }
 .logo{
-    width: 150px;
+    width: 50%;
+    height: 100%;
 }
 .card{
     width: 300px;
