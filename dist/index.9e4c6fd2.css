@@ -1,8 +1,8 @@
 .header {
-  border: 1 px solid black;
+  border: 1 px solid #610000b0;
   color: #fff;
   box-sizing: border-box;
-  background-color: #3db711;
+  background-color: #0d3a63;
   justify-content: space-between;
   margin: 10px;
   display: flex;

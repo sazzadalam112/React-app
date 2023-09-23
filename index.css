@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between ;
     margin: 10px;
-    border: 1 px solid black;
-    background-color: rgb(61, 183, 17);
+    border: 1 px solid hsla(0, 100%, 19%, 0.69);
+    background-color: hsl(209, 77%, 22%);
     color: white;
     box-sizing: border-box;
 }
