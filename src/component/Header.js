@@ -1,3 +1,5 @@
+
+
 export const Title = () => (
     <a href="/">
     <img
@@ -9,12 +11,15 @@ export const Title = () => (
 );
 
 const Header = () => {
+    // const title = "Food Villa"
+   
     return(
         <div className="header">
             <Title />
+           
              <div className="nav-items">
             <ul>
-                <li>Home</li>
+                <li>Home</li> 
                 <li>About</li>
                 <li>Contact</li>
                 <li>Cart</li>

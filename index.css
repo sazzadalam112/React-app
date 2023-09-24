@@ -46,6 +46,12 @@
     padding: 10px;
     column-gap: 20px;
     row-gap: 20px;
-    background-color: pure white;
+    background-color: pure rgb(225, 209, 209);
     
+}
+.search-container{
+    background-color: #2d2828;
+}
+Body{
+    background-color: rgb(139, 137, 161);
 }
